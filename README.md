@@ -1,0 +1,2 @@
+# MW2KillstreaksRemastered
+GSC
