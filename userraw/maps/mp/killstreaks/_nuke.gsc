@@ -174,8 +174,7 @@ cancelNukeOnDeath( player )
 	if ( isDefined( player ) && level.cancelMode == 2 )
 		player thread maps\mp\killstreaks\_emp::EMP_Use( 0, 0 );
 
-	maps\mp\gametypes\_gamelogic::resumeTimer();
-	level.timeLimitOverride = false;
+	level restartTimer();
 
 	setDvar( "ui_bomb_timer", 0 ); // Nuke sets '4' to avoid briefcase icon showing
 	
@@ -217,6 +216,7 @@ nukeEffects()
 	setDvar( "ui_bomb_timer", 0 );
 	setGameEndTime( 0 );
 
+	// Breaks killcam - Won't show kill cam
 	level.nukeDetonated = true;
 
 	// Kills all airsupport if defined
@@ -303,6 +303,7 @@ nukeVision()
         player.nuked = undefined;
         level.nuked = undefined;
         level.nukeIncoming = undefined;
+		level.nukeDetonated = undefined;
     }
 
 	// If nukeAftermath set waits to reset the map vision (default 60 secs), if = 0 then never turns off vision
