@@ -69,7 +69,7 @@ scr_nuke_kills_all 0                      - Disables this feature, nuke only kil
 scr_nuke_Kills_all 1                      - Kills every player in the game
 
 scr_nuke_clasic_mode 0                    - Disables this features 
-scr_nuke_clasic_mode 0                    - Two harriers escort two stealth bombers, who do a fly by dropping the nuke
+scr_nuke_clasic_mode 1                    - Two harriers escort two stealth bombers, who do a fly by dropping the nuke
 ```
 
 
