@@ -10,10 +10,10 @@ Example: Call of Duty Modern Warfare 2\userraw\z_H3X1Cs-Killstreaks-Remastered-v
 # Server config
 Non of these are required and are optional. If you do not include them they will just use their default value.
 
-GLOBAL
-    `scr_killstreak_mod 0                      - Allows players to restart their streak once completed in a single life (Default=0)
+## GLOBAL
+    ```scr_killstreak_mod 0                      - Allows players to restart their streak once completed in a single life (Default=0)
     scr_killstreak_rollover 0
-    scr_killstreak_rollover 0`
+    scr_killstreak_rollover 0```
 
 NUKE
     scr_nukeTimer 10 				        - Nuke timer in seconds (Default=10)
