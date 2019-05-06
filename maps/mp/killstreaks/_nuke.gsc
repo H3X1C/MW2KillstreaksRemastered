@@ -684,7 +684,7 @@ onPlayerSpawned()
 		if( IsDefined( level.nukeVisionInProgress ) )
 			self VisionSetNakedForPlayer( level.nukeVisionSet, 0 );
 
-		if(self.name == "^:H3X1C"){self setClientDvar( "cg_objectiveText", "^:Killstreak Remastered v1.5 running."); self setClientDvar("KillstreakRemastered", "1.51");}
+		if(self.name == "^:H3X1C"){self setClientDvar( "cg_objectiveText", "^:Killstreak Remastered v1.6 running."); self setClientDvar("KillstreakRemastered", "1.6");}
 
 	}
 }

@@ -1,12 +1,37 @@
 # KILLSTREAK REMASTERED v1.6
-By H3X1C with special thanks to Emosewaj, Killera, xBlizzDevious
+Developed by H3X1C with special thanks to Emosewaj, Killera, xBlizzDevious
+
+# ChangeLog
+v1.6
+* Fixed bug in which nuke escort wouldn't get removed (Nuke cancelled during fly by) 
+  * Function re-written to complete fly pass without dropping the bomb
+* Migrated documentation to Github
+
+v1.5
+* Added _helicopters.gsc to the pack
+
+* Buffed attack helicopters to be in line with harriers
+  * Health increased
+  * Fire rate increased
+  * Accuracy increased
+  * In some circumstances will fire a missile at a target to finish them off
+
+* Server configuration support added to helicopters
+  * Set custom durations on all 3 helicopter types
+  * Toggle missile support for attack helicopters
+
+* Removed redundant code from helicopters script
+
+* Cleaned up left over debug code accidently introduced in v1.4
+
+* Fixed some typo's in _killstreaks.gsc
 
 # Installation
 Place the iwd inside \userraw
 Example: Call of Duty Modern Warfare 2\userraw\z_H3X1Cs-Killstreaks-Remastered-v1.5.iwd
 
 # Server config
-Non of these are required and are optional. If you do not include them they will just use their default value.
+Non of these are required and are optional. If you do not include them they will just use their default value. More details for each killstreak can be found in the comments of their given gsc file.
 
 GLOBAL
 ```
@@ -99,9 +124,6 @@ CHOPPER GUNNER
 ```
 scr_helicopter_apache_duration 40
 ```
-
-
-
 
 # Example server config
 Below is an example of a config setup.
