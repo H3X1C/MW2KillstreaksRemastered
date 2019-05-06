@@ -1,4 +1,4 @@
-# KILLSTREAK REMASTERED v1.5
+# KILLSTREAK REMASTERED v1.6
 By H3X1C with special thanks to Emosewaj, Killera, xBlizzDevious
 
 # Installation
