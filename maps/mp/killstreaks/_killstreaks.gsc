@@ -269,7 +269,6 @@ killstreakUsePressed()
 	}
 	else
 	{
-		level.players[0] sayall("Life ID passed into nuke: " + lifeID);
 		  if ( !self [[ level.killstreakFuncs[ streakName ] ]]( lifeId ) )
 			  return ( false );
 	}
@@ -529,9 +528,6 @@ giveKillstreak( streakName, isEarned, awardXp, owner )
 	else
 		self.pers["killstreaks"][0].lifeId = self.pers["deaths"];
 
-
-	//level.players[0] sayall(self.pers["deaths"]);
-	
 	// Probably obsolete unless we bring back the autoshotty	
 	if ( isdefined( level.killstreakSetupFuncs[ streakName ] ) )
 		self [[ level.killstreakSetupFuncs[ streakName ] ]]();
