@@ -28,7 +28,7 @@ v1.5
 
 # Installation
 Place the iwd inside \userraw
-Example: Call of Duty Modern Warfare 2\userraw\z_H3X1Cs-Killstreaks-Remastered-v1.5.iwd
+Example: Call of Duty Modern Warfare 2\userraw\z_H3X1Cs-Killstreaks-Remastered-v1.6.iwd
 
 # Server config
 Non of these are required and are optional. If you do not include them they will just use their default value. More details for each killstreak can be found in the comments of their given gsc file.
