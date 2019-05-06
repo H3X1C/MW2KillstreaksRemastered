@@ -35,27 +35,27 @@ Non of these are required and are optional. If you do not include them they will
 
 GLOBAL
 ```
-scr_killstreak_mod 0                      - Allows players to restart their streak once completed in a single life (Default=0)
-scr_killstreak_rollover 0
-scr_killstreak_rollover 0
+scr_killstreak_mod 0                      - Modifier to the amount of kills required for a given killstreak, (scr_killstreak_mod 5 = Nuke 30 kills) (Default=0 -> Disabled)
+
+scr_killstreak_rollover 0                 - Allows players to restart their streak once completed in a single life (Default=0 -> Disabled)
+scr_killstreak_rollover 1
 ```
 
 NUKE
 ```
 scr_nukeTimer 10                          - Nuke timer in seconds (Default=10)
 
-scr_nuke_is_moab 0                        - Nuke acts normally (ending game after detonation) (Default=0)
+scr_nuke_is_moab 0                        - Nuke acts normally (ending game after detonation) (Default=0 -> Disabled)
 scr_nuke_is_moab 1                        - Nuke acts like MW3 MOAB (Game does not end after detonation)
 
-scr_nuke_aftermath_duration 0             - Aftermath vision duration(s) (0=PermanentVision) (Default=0)
+scr_nuke_aftermath_duration 0             - Aftermath vision duration(s) (Default=0 -> PermanentVision)
 
-scr_nuke_active_vehicles 0                - Doesn't destory vehicles (Air support) on nuke detonation [not an EMP] (Default=0)
+scr_nuke_active_vehicles 0                - Doesn't destory vehicles (Air support) on nuke detonation [not an EMP] (Default=0 -> Disabled)
 scr_nuke_active_vehicles 1                - Destroys all vehicles (Air support) on nuke detonation [not an EMP]
 
-scr_nuke_emp_duration 0                   - Doesn't call in a global EMP to all players on nuke detonation (Default=0)
-scr_nuke_emp_duration 1                   - Calls in a global EMP to all players on nuke detonation
+scr_nuke_emp_duration 0                   - EMP triggered on nuke detonation, specify emp duration in seconds  (Default=0 -> Disabled)
 
-scr_nukeCancelMode 0                      - Disables this feature, nukes will behave as normal (Default=0)
+scr_nukeCancelMode 0                      - Disables this feature, nukes will behave as normal (Default=0 -> Disabled)
 scr_nukeCancelMode 1                      - If nuke caller is killed nuke cancelled (Cut content)
 scr_nukeCancelMode 2                      - If nuke caller is killed nuke cancelled and emp detonated (Cut content)
 
@@ -65,7 +65,7 @@ scr_nuke_earthquake_magnitude 0.6         - Standard earthquake magnitude (Defau
 scr_nuke_earthquake_duration 0            - Disabled earthquake 
 scr_nuke_earthquake_duration 10	          - Standard earthquake duration (Default=10)
 
-scr_nuke_kills_all 0                      - Disables this feature, nuke only kills other team (Default=0)
+scr_nuke_kills_all 0                      - Disables this feature, nuke only kills other team (Default=0 -> Disabled)
 scr_nuke_Kills_all 1                      - Kills every player in the game
 
 scr_nuke_clasic_mode 0                    - Disables this features 
@@ -102,27 +102,27 @@ scr_uav_timeout 30                        - UAV timer in seconds (Default=30)
 
 scr_counter_uav_timeout 30                - Counter UAV in seconds (Default=30)
 
-scr_uav_forceon 0                         - Disables forced UAV (Default=0)
+scr_uav_forceon 0                         - Disables forced UAV (Default=0 -> Disabled)
 
 scr_uav_forceon 1                         - Force permanent radar on 
 ```
 
 ATTACK HELICOPTER
 ```
-scr_helicopter_cobra_duration 60
+scr_helicopter_cobra_duration 60         - Chopper Gunner duration in seconds (Default=60)
 
 scr_helicopter_cobra_missile 0           - Disable missile support 
-scr_helicopter_cobra_missile 1           - Attack helicopters will now shoot missiles at targets (Default=1)
+scr_helicopter_cobra_missile 1           - Attack helicopters will now shoot missiles at targets (Default=1 -> Enabled)
 ```
 
 PAVELOW
 ```
-scr_helicopter_pavelow_duration 60
+scr_helicopter_pavelow_duration 60       - Pavelow duration in seconds (Default=60)
 ```
 
 CHOPPER GUNNER
 ```
-scr_helicopter_apache_duration 40
+scr_helicopter_apache_duration 40        - Chopper Gunner duration in seconds (Default=40)
 ```
 
 # Example server config
@@ -140,3 +140,7 @@ set scr_emp_duration 45
 set scr_ac130_duration 25
 set scr_ac130_flares 1
 ```
+
+### Potencial future version content
+* Make killstreak duration 0 equate to infinite duration (aka killstreak MUST be shot down in order for them to leave).
+* Client side menu files, for easily setting up private games.
