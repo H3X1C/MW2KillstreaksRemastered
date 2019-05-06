@@ -1,0 +1,19 @@
+#ChangeLog#
+v1.5
+-Added _helicopters.gsc to the pack
+
+-Buffed attack helicopters to be in line with harriers
+    -Health increased
+    -Fire rate increased
+    -Accuracy increased
+    -In some circumstances will fire a missile at a target to finish them off
+
+-Server configuration support added to helicopters
+    -Set duration on all 3 helicopter types
+    -Toggle missile support for attack helicopters
+
+-Removed redundant code from helicopters script
+
+-Cleaned up left over debug code accidently introduced in prior version
+
+-Fixed some typo's in _killstreaks.gsc
