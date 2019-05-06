@@ -169,7 +169,7 @@ bomberEscortTeam()
 
 	// Drop payload given nuke_cancelled hasn't been notified
 	if ( level.initialCancelCount == level.cancelCount)
-		payloadDropWaiter(mapCenter);
+		payloadDropWaiter(mapCenter, b1, b2);
 
 	wait 2.0;
 
@@ -187,14 +187,14 @@ bomberEscortTeam()
 	b3 delete();
 }
 
-payloadDropWaiter(mapCenter)
+payloadDropWaiter(mapCenter, b1, b2)
 {
 	self endon("disconnect");
 	level endon ( "nuke_cancelled" );
 
 	// Spawn the payload missiles
-	level.payload0 = spawn( "script_model", level.b1.origin );
-	level.payload1 = spawn( "script_model", level.b2.origin );
+	level.payload0 = spawn( "script_model", b1.origin );
+	level.payload1 = spawn( "script_model", b2.origin );
 
 	// Set models
 	level.payload0 setModel("projectile_cbu97_clusterbomb");
@@ -374,7 +374,7 @@ cancelNukeOnDeath( player )
 	level.cancelCount ++;
 
 	level notify ( "nuke_cancelled" );
-
+	
 	// payload cleanup in event cancelled mid-way through payload function
 	if ( isDefined( level.payload0 ) )
 		level.payload0 delete();
