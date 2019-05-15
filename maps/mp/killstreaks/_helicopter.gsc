@@ -735,7 +735,7 @@ heli_think( lifeId, owner, startnode, heli_team, heliType )
 	else if( heliType == "flares")
 		chopper.maxhealth = level.apache_maxhealth;					// Pavelow Max health
 	else if( little_bird == 1 )
-		chopper.maxhealth = (level.cobra_maxhealth * 0.70);			// LittleBird Max health (70% of cobra health)
+		chopper.maxhealth = int(level.cobra_maxhealth * 0.70);		// LittleBird Max health (70% of cobra health)
 	else 
 		chopper.maxhealth = level.cobra_maxhealth;					// Cobra Max health
 	
@@ -1347,6 +1347,9 @@ spinSoundShortly()
 heli_explode( altStyle )
 {
 	self notify( "death" );
+
+	if ( self.little_bird == 1 )
+		self.heli_type = "littlebird";
 	
 	if ( isDefined( altStyle ) && isDefined( level.chopper_fx["explode"]["air_death"][self.heli_type] ) )
 	{
