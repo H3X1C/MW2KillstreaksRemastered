@@ -1,6 +1,10 @@
 # KILLSTREAK REMASTERED v1.6
 Developed by H3X1C with special thanks to Emosewaj, Killera, xBlizzDevious
 
+# Introduction
+The aim of this project was to add polish to the existing killstreaks in the game by removing unnecessary code, restore cut content features, reintroduce server configuration and introduce some new features.
+Some popular features involve: Nuke MOAB, Killstreak duration configurability, killstreak rollover and more. See the configuration option below for a full break down of the options.
+
 # ChangeLog
 v1.6
 * Fixed bug in which nuke escort wouldn't get removed (Nuke cancelled during fly by) 
