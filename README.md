@@ -2,8 +2,9 @@
 Developed by H3X1C with special thanks to Emosewaj, Killera, xBlizzDevious
 
 # Introduction
-The aim of this project was to add polish to the existing killstreaks in the game by removing unnecessary code, restore cut content features, reintroduce server configuration and introduce some new features.
-Some popular features involve: Nuke MOAB, Killstreak duration configurability, killstreak rollover and more. See the configuration option below for a full break down of the options.
+The aim of this project was to add some much needed polish to the existing killstreaks in the game by removing unnecessary code, restoring cut content features, reintroducing server configuration options and introducing some new features.
+Some popular features include: Nuke MOAB, Killstreak duration configurability, Killstreak rollover and more. 
+See the Server Configuration section below for a full break down of the customisable options.
 
 # ChangeLog
 v1.6
@@ -34,7 +35,7 @@ v1.5
 Place the iwd inside \userraw
 Example: Call of Duty Modern Warfare 2\userraw\z_H3X1Cs-Killstreaks-Remastered-v1.6.iwd
 
-# Server config
+# Server Configuration
 Non of these are required and are optional. If you do not include them they will just use their default value. More details for each killstreak can be found in the comments of their given gsc file.
 
 GLOBAL
@@ -148,3 +149,4 @@ set scr_ac130_flares 1
 ### Potencial future version content
 * Make killstreak duration 0 equate to infinite duration (aka killstreak MUST be shot down in order for them to leave).
 * Client side menu files, for easily setting up private games.
+* Restore nuke care package code
